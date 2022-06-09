@@ -1,7 +1,12 @@
 {
   "name": "news-app",
   "version": "0.1.0",
+  "author": "Mina George",
   "private": true,
+  "repository": {
+    "type":"git",
+    "url":""
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
