@@ -1,0 +1,50 @@
+.footer-container {
+  width: $default-width;
+  height: 300px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  .inner-container {
+    width: 80%;
+    height: 300;
+    display: flex;
+    justify-content: center;
+
+    .left-container {
+      text-align: start;
+
+      .logo {
+        width: 157px;
+        height: auto;
+      }
+
+      .sub-text-container {
+        width: 250px;
+        margin-top: 20px;
+        color: #5e6282;
+      }
+    }
+
+    .center-container {
+      display: flex;
+      justify-content: space-between;
+
+      .container-one {
+        text-align: start;
+
+        .title {
+          font-weight: 800;
+          color: #080809;
+          font-size: 26px;
+        }
+
+        .sub-title {
+          color: #5e6282;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
