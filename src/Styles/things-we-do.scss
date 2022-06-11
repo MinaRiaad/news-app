@@ -1,0 +1,500 @@
+@media screen and (min-width: 1800px) {
+  .highlight-container {
+    background-color: #efefef;
+    height: 788px;
+    width: $default-width;
+    display: flex;
+
+    .container-one {
+      height: $default-width;
+      width: $container-width;
+      margin-left: 3%;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        margin-top: 450px;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+        width: $container-width;
+      }
+
+      img {
+        @include square-image;
+        margin-top: 360px;
+      }
+    }
+
+    .container-two {
+      height: $default-width;
+      width: $container-width;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        margin-top: 350px;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $container-width;
+      }
+
+      .paragraph-two-container {
+        position: absolute;
+        margin-top: 600px;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $container-width;
+        z-index: 5;
+      }
+
+      .image-one {
+        @include square-image;
+        margin-top: $container-width;
+      }
+
+      .image-two {
+        @include square-image;
+        filter: brightness(50%);
+      }
+    }
+
+    .container-three {
+      height: $default-width;
+      width: $container-width;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        margin-top: 250px;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $container-width;
+        z-index: 5;
+      }
+
+      .paragraph-two-container {
+        position: absolute;
+        margin-top: 500px;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $container-width;
+      }
+
+      .image-one {
+        @include square-image;
+        margin-top: 150px;
+        filter: brightness(50%);
+      }
+
+      .image-two {
+        @include square-image;
+      }
+
+      .complete {
+        height: 90px;
+        width: $container-width;
+        background: $pink;
+      }
+    }
+
+    .content-container {
+      @include flex-center;
+      height: 70%;
+      margin-top: 188px;
+      background: $pink;
+      flex-grow: 1;
+
+      .main-paragraph-container {
+        width: 70%;
+        text-align: end;
+        .main-paragraph {
+          font-size: 57px;
+          font-weight: 900;
+          color: #253776;
+        }
+      }
+
+      .sub-paragraph-container {
+        width: 70%;
+        text-align: center;
+        .sub-paragraph {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1050px) {
+  .highlight-container {
+    background-color: #efefef;
+    height: 788px;
+    width: $default-width;
+    display: flex;
+    flex-direction: column;
+
+    .container-one {
+      height: 400px;
+      width: $default-width;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+        width: $default-width;
+      }
+
+      img {
+        @include square-image;
+      }
+    }
+
+    .container-two {
+      height: 400px;
+      width: $default-width;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: 48%;
+        text-align: end;
+      }
+
+      .paragraph-two-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        z-index: 5;
+        margin-left: 55%;
+      }
+
+      .image-one {
+        @include square-image;
+      }
+
+      .image-two {
+        @include square-image;
+        filter: brightness(50%);
+      }
+    }
+
+    .container-three {
+      width: $default-width;
+      height: 400px;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $container-width;
+        z-index: 5;
+        margin-left: 20%;
+      }
+
+      .paragraph-two-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $container-width;
+        margin-left: 55%;
+      }
+
+      .image-one {
+        @include square-image;
+        filter: brightness(50%);
+      }
+
+      .image-two {
+        @include square-image;
+      }
+
+      .complete {
+        display: none;
+      }
+    }
+
+    .content-container {
+      @include flex-center;
+      height: 70%;
+      background: $pink;
+      flex-grow: 1;
+
+      .main-paragraph-container {
+        width: 70%;
+        text-align: center;
+        .main-paragraph {
+          font-size: 57px;
+          font-weight: 900;
+          color: #253776;
+        }
+      }
+
+      .sub-paragraph-container {
+        width: 70%;
+        text-align: center;
+        .sub-paragraph {
+          color: white;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 900px) {
+  .highlight-container {
+    background-color: #efefef;
+    height: 788px;
+    width: $default-width;
+    display: flex;
+    flex-direction: column;
+
+    .container-one {
+      height: 400px;
+      width: $default-width;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+        width: $default-width;
+      }
+
+      img {
+        @include inverse-square-image;
+      }
+    }
+
+    .container-two {
+      height: 400px;
+      width: $default-width;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: 44%;
+        text-align: end;
+      }
+
+      .paragraph-two-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        z-index: 5;
+        margin-left: 53%;
+      }
+
+      .image-one {
+        @include inverse-square-image;
+      }
+
+      .image-two {
+        @include inverse-square-image;
+        filter: brightness(50%);
+      }
+    }
+
+    .container-three {
+      width: $default-width;
+      height: 400px;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $container-width;
+        z-index: 5;
+        margin-left: 25%;
+      }
+
+      .paragraph-two-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $container-width;
+        margin-left: 50%;
+      }
+
+      .image-one {
+        @include inverse-square-image;
+        filter: brightness(50%);
+      }
+
+      .image-two {
+        @include inverse-square-image;
+        margin-bottom: 74px;
+      }
+
+      .complete {
+        display: none;
+      }
+    }
+
+    .content-container {
+      @include flex-center;
+      height: 70%;
+      background: $pink;
+      flex-grow: 1;
+
+      .main-paragraph-container {
+        width: 70%;
+        text-align: center;
+        .main-paragraph {
+          font-size: 57px;
+          font-weight: 900;
+          color: #253776;
+        }
+      }
+
+      .sub-paragraph-container {
+        width: 70%;
+        text-align: center;
+        .sub-paragraph {
+          color: white;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 900px) {
+  .highlight-container {
+    background-color: #efefef;
+    height: 1000px;
+    width: $default-width;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .container-one {
+      height: 400px;
+      width: $default-width;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+        width: $default-width;
+      }
+
+      img {
+        @include square-image;
+      }
+    }
+
+    .container-two {
+      height: 500px;
+      width: $default-width;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $default-width;
+        text-align: center;
+      }
+
+      .paragraph-two-container {
+        display: none;
+      }
+
+      .image-one {
+        @include square-image;
+      }
+
+      .image-two {
+        display: none;
+      }
+    }
+
+    .container-three {
+      width: $default-width;
+      height: 400px;
+      overflow: hidden;
+
+      .paragraph-one-container {
+        display: none;
+      }
+
+      .paragraph-two-container {
+        position: absolute;
+        color: $white;
+        font-weight: 800;
+        font-size: 30px;
+        width: $default-width;
+        text-align: center;
+      }
+
+      .image-one {
+        display: none;
+      }
+
+      .image-two {
+        @include inverse-square-image;
+        margin-bottom: 74px;
+      }
+
+      .complete {
+        display: none;
+      }
+    }
+
+    .content-container {
+      @include flex-center;
+      height: 70%;
+      background: $pink;
+      flex-grow: 1;
+
+      .main-paragraph-container {
+        width: $default-width;
+        text-align: center;
+        .main-paragraph {
+          font-size: 57px;
+          font-weight: 900;
+          color: #253776;
+        }
+      }
+
+      .sub-paragraph-container {
+        width: $default-width;
+        text-align: center;
+        .sub-paragraph {
+          color: white;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
