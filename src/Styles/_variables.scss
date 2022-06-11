@@ -1,0 +1,47 @@
+$default-width: 100%;
+$slide-height: 800px;
+$container-width: 250px;
+$white: #ffffff;
+$pink: #f215b6;
+
+@mixin square-image {
+  height: $container-width;
+  width: auto;
+}
+
+@mixin inverse-square-image {
+  width: $container-width;
+  height: auto;
+}
+
+@mixin full-width-image {
+  width: 100%;
+  height: auto;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin default-button {
+  background: #ff7c16;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  height: 50px;
+  width: 180px;
+}
+
+@mixin sign-up-button {
+  border: 1px #212832 solid;
+  background-color: transparent;
+  border-radius: 7px;
+  color: #212832;
+  width: 100px;
+  cursor: pointer;
+  height: 35px;
+  margin-bottom: 10px;
+}
