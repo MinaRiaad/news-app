@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import Logo from "src/assets/images/link-logo.jpg";
 
 const NavBar = () => {
   const [hidden, setHidden] = useState(true);
@@ -13,7 +14,7 @@ const NavBar = () => {
     <>
       <div className="nav-container">
         <div className="left-container">
-          <img src="/images/link-logo.jpg" alt="logo" />
+          <img src={Logo} alt="logo" />
         </div>
         <div className="center-container">
           <p>Home</p>

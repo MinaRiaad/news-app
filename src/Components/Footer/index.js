@@ -1,5 +1,7 @@
-import { Grid } from "@mui/material";
 import React from "react";
+import { Grid } from "@mui/material";
+import Logo from "src/assets/images/link-logo.jpg";
+import Social from "src/assets/images/social.png";
 
 const Footer = () => {
   return (
@@ -8,7 +10,7 @@ const Footer = () => {
         <Grid container spacing={5}>
           <Grid item xs={12} md={6} lg={4}>
             <div className="left-container">
-              <img src="/images/link-logo.jpg" className="logo" alt="logo" />
+              <img src={Logo} className="logo" alt="logo" />
               <div className="sub-text-container">
                 <p>
                   We make technology produce productive, adaptable and
@@ -42,7 +44,7 @@ const Footer = () => {
             </div>
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <img src="/images/social.png" className="logo" alt="logo" />
+            <img src={Social} className="logo" alt="logo" />
           </Grid>
         </Grid>
       </div>
