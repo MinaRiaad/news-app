@@ -1,0 +1,106 @@
+.news-container {
+  height: 500px;
+  width: 100%;
+}
+
+.filters-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.active-filter-button {
+  background: #0eceff;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 7px;
+}
+
+.filter-button {
+  background: #e3e3e3;
+  color: #0f526e;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 7px;
+}
+
+.top-news {
+  color: #14183e;
+  font-size: 65px;
+  font-weight: 800;
+}
+
+.cards-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  .show-more-button {
+    margin-top: 50px;
+    @include default-button;
+  }
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  height: 692px;
+  width: 400px;
+  background: $white;
+  border-radius: 24px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  img {
+    border-radius: 24px 24px 0 0;
+    height: 484px;
+  }
+
+  .card-footer {
+    padding: 20px;
+    background: $white;
+  }
+
+  .title-container {
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .date-container {
+    display: flex;
+    text-align: start;
+    column-gap: 10px;
+    margin-top: 5px;
+  }
+
+  .badge-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .badge {
+    background: #74747433;
+    color: #5e6282;
+    border-radius: 7px;
+    padding: 5px;
+  }
+
+  .title {
+    font-size: 22px;
+    color: #5e6282;
+    font-family: sans-serif;
+  }
+
+  .date {
+    font-size: 16px;
+    color: #707070;
+  }
+}
