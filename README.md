@@ -1,4 +1,4 @@
-# Check the deployed version
+# Check the live version
 
 https://minariaad.github.io/news-app/
 
